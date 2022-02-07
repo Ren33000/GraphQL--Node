@@ -4,42 +4,67 @@ const UserList = [
         name: "John",
         username: "john",
         age: 20,
-        nationality: "Canada",
+        nationality: "CANADA",
+        friends: [
+            {
+                id: 4,
+                name: "Marc",
+                username: "Marco",
+                age: 43,
+                nationality: "FRANCE",
+            },
+            {
+                id: 5,
+                name: "Kiko",
+                username: "Kiki-chan",
+                age: 15,
+                nationality: "JAPAN",
+            },
+        ]
     },
     {
         id: 2,
         name: "Pedro",
         username: "PedroTech",
         age: 20,
-        nationality: "Brazil",
+        nationality: "BRAZIL",
     },
     {
         id: 3,
         name: "Sarah",
         username: "cameron",
         age: 25,
-        nationality: "United States",
+        nationality: "UNITED STATES",
     },
     {
         id: 4,
         name: "Marc",
         username: "Marco",
         age: 43,
-        nationality: "France",
+        nationality: "FRANCE",
+        friends: [
+            {
+                id: 5,
+                name: "Kiko",
+                username: "Kiki-chan",
+                age: 15,
+                nationality: "JAPAN",
+            },
+        ]
     },
     {
         id: 5,
         name: "Kiko",
         username: "Kiki-chan",
         age: 15,
-        nationality: "Japan",
+        nationality: "JAPAN",
     },
     {
         id: 6,
         name: "Jayoong",
         username: "Jay",
         age: 37,
-        nationality: "South Korea",
+        nationality: "SOUTH KOREA",
     },
 ];
 
