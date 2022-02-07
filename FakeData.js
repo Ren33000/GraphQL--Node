@@ -68,4 +68,37 @@ const UserList = [
     },
 ];
 
-module.exports = {UserList}
+const MovieList = [
+    {
+        id: 1, 
+        name: "Le Voyage de Chihiro",
+        yearOfPublication: 2009,
+        isInTheaters: true,
+    },
+    {
+        id: 2, 
+        name: "Kingdom",
+        yearOfPublication: 2020,
+        isInTheaters: true,
+    },
+    {
+        id: 3, 
+        name: "Rush Hour",
+        yearOfPublication: 2000,
+        isInTheaters: false,
+    },
+    {
+        id: 4, 
+        name: "Look Up",
+        yearOfPublication: 2021,
+        isInTheaters: true,
+    },
+    {
+        id: 5, 
+        name: "Coco",
+        yearOfPublication: 2020,
+        isInTheaters: false,
+    },
+];
+
+module.exports = {UserList, MovieList}
