@@ -48,7 +48,6 @@ const resolvers = {
                     userUpdated = user
                 }
             });
-
             return userUpdated; 
         },
 
