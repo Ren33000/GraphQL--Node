@@ -51,6 +51,16 @@ const typeDefs = gql`
         JAPAN
         SOUTH KOREA
     }
+
+    type UserSuccessfulResult {
+        users: [User!]!
+    }
+
+    type UsersErrorResult {
+        message: String!
+    }
+
+    union UsersResult = UsUserSuccessfulResult | UsersErrorResult
 `;
 
 module.exports = {typeDefs}
