@@ -5,8 +5,9 @@ const { last } = require("lodash");
 const resolvers = {
     Query: {
         // Users resolver
-        users: () => {
-            return UserList;
+        users: (parent, args, context, info) => {
+            if(UserList) return {users: UserList};
+            return {message: 'There was an error'};
         },
         user: (parent, args, context, info) => {
             const id = args.id;
@@ -54,6 +55,18 @@ const resolvers = {
         deleteUser: (parent, args) => {
             const id = args.id;
             _.remove(UserList, (user) => user.id === Number(id));
+            return null;
+        }
+    },
+
+    UsersResult: {
+        _resolveType(obj) {
+            if(obj.users) {
+                return "UsersSuccessfulResult";
+            }
+            if(obj.message){
+                return "UsersErrorResult";
+            }
             return null;
         }
     }

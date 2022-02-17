@@ -19,7 +19,7 @@ const typeDefs = gql`
     }
 
     type Query {
-        users: [User!]!
+        users: UsersResult
         user(id: ID!): User!
         movies: [Movie!]!
         movie(name: String!): Movie!
@@ -52,7 +52,7 @@ const typeDefs = gql`
         SOUTH KOREA
     }
 
-    type UserSuccessfulResult {
+    type UsersSuccessfulResult {
         users: [User!]!
     }
 
@@ -60,7 +60,7 @@ const typeDefs = gql`
         message: String!
     }
 
-    union UsersResult = UsUserSuccessfulResult | UsersErrorResult
+    union UsersResult = UsersSuccessfulResult | UsersErrorResult
 `;
 
 module.exports = {typeDefs}
