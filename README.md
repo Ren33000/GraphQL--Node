@@ -6,7 +6,7 @@
   <img src="https://i.ytimg.com/vi/yqWzCV0kU_c/maxresdefault.jpg"/>
 </p>
 
-Practising queries in GraphQL with Apollo server and building a little app with Node & React.
+Practising queries in GraphQL with Apollo and building a little app with Node & React.
 
 
 # Concepts
